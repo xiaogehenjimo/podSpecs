@@ -11,6 +11,9 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "ssh://git@gitlab.bee.to:2222/client_development/WBUploadService.git", :tag => "#{spec.version}" }
   #spec.source_files = 'WBUploadService/**/*'
 
+  spec.subspec 'Core' do |subs|
+    subs.source_files = 'WBUploadService/*.{h,m,mm}'
+  end
   spec.subspec 'NetWork' do |subs|
     subs.source_files = 'WBUploadService/Network/**/*'
   end
