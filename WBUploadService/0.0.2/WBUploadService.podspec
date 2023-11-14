@@ -32,5 +32,6 @@ Pod::Spec.new do |spec|
   spec.prefix_header_contents = <<-EOS
     #import "NSDictionary+WBUKTTypeCast.h"
     #import "NSDictionary+WBUKTKeyValue.h"
+    #import "NSFileManager+WBUKTUtilities.h"
   EOS
 end
