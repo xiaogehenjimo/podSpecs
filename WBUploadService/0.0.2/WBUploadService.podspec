@@ -28,5 +28,9 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'AFNetworking', '~> 4.0.1'
   spec.libraries = 'resolv'
-  
+
+  spec.prefix_header_contents = <<-EOS
+    #import "NSDictionary+WBUKTTypeCast.h"
+    #import "NSDictionary+WBUKTKeyValue.h"
+  EOS
 end
