@@ -27,5 +27,6 @@ Pod::Spec.new do |spec|
   end
 
   spec.dependency 'AFNetworking', '~> 4.0.1'
+  spec.libraries = 'resolv'
   
 end
