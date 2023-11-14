@@ -8,6 +8,8 @@ Pod::Spec.new do |spec|
   spec.author       = { "xuqinqiang" => "qinqiang.xu@jaco.live" }
   spec.platform     = :ios
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "http://gitlab.bee.to/client_development/WBUploadService.git", :tag => "#{spec.version}" }
+  #spec.source       = { :git => "http://gitlab.bee.to/client_development/WBUploadService", :tag => "#{spec.version}" }
+  spec.source = { :git => "http://gitlab.bee.to/client_development/WBUploadService.git", :branch => "fixBug" }
+
   spec.dependency 'AFNetworking'
 end
