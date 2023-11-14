@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.platform     = :ios, "11.0"
   #spec.source       = { :git => "http://gitlab.bee.to/client_development/WBUploadService", :tag => "#{spec.version}" }
-  spec.source = { :git => "http://gitlab.bee.to/client_development/WBUploadService.git", :branch => "fixBug" }
+  spec.source = { :git => "ssh://git@gitlab.bee.to:2222/client_development/WBUploadService.git", :branch => "fixBug" }
 
   spec.dependency 'AFNetworking'
 end
