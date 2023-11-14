@@ -33,5 +33,6 @@ Pod::Spec.new do |spec|
     #import "NSDictionary+WBUKTTypeCast.h"
     #import "NSDictionary+WBUKTKeyValue.h"
     #import "NSFileManager+WBUKTUtilities.h"
+    #import "WBUKFileError.h"
   EOS
 end
