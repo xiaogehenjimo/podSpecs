@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "WBUploadService"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "WBUploadService"
   spec.description  = "WBUploadService"
   spec.homepage     = "http://EXAMPLE/WBUploadService"
@@ -28,11 +28,4 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'AFNetworking', '~> 4.0.1'
   spec.libraries = 'resolv'
-
-  spec.prefix_header_contents = <<-EOS
-    #import "NSDictionary+WBUKTTypeCast.h"
-    #import "NSDictionary+WBUKTKeyValue.h"
-    #import "NSFileManager+WBUKTUtilities.h"
-    #import "WBUKFileError.h"
-  EOS
 end
